@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Function scope example</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Odin Function</h1>
+        <a href="fizzBUZZ.html">Functions @Odin projects</a>
+    </div>
+
+  <script>
+    function add7(number){
+        return number += 7;
+
+    }
+    console.log(add7(13));
+
+    function multiply(a, b){
+        return a * b;
+    }
+    console.log(multiply(3,2));
+
+    function capitalize (word) {
+        if(word){
+            word= word.toLowerCase();
+            newWord= word[0].toUpperCase() + word.slice(1);
+            return newWord
+        }
+    }
+    console.log(capitalize("nelson"));
+    console.log(capitalize("i am the bread of life"));
+
+    function lastLetter(word){
+
+       return word.slice(-1);
+    }
+    console.log(lastLetter("abcd"));
+
+  </script>
+</body>
+</html>

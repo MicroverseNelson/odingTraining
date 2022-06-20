@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Function scope example</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Odin Function</h1>
+        <a href="fizzBUZZ.html">Functions @Odin projects</a>
+    </div>
+
+  <script>
+    let number = parseInt(prompt("enter a number to fizzBuzz? "));
+
+    for (let i=1; i<= number; i++){
+        if (i % 4 === 0 && i % 5 === 0){
+            console.log("fizzBuzz");
+
+        }else if(i % 4 === 0 ){
+            console.log("Fizz");
+        }else if (i % 5 === 0 ){ 
+            console.log("Buzz");
+        }else{
+        console.log(i);
+        }
+    }
+
+  </script>
+</body>
+</html>
